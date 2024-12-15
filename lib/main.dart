@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'ClipPath example',
+      title: 'Autobiography App',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(primarySwatch: Colors.green),
       home: HomePage(),
@@ -43,7 +43,7 @@ class _HomePageState extends State<HomePage> {
     if (currentIndex == 0) player.play(AssetSource("1.mp3"));
     return Scaffold(
       appBar: AppBar(
-        title: Text('My Autobiography'),
+        title: Text('我的自傳'),
         centerTitle: true,
       ),
       body: tabs[currentIndex],
@@ -58,29 +58,21 @@ class _HomePageState extends State<HomePage> {
         items: [
           BottomNavigationBarItem(
             icon: currentIndex == 0
-                ? Image.asset(
-                    'assets/f1.jpg',
-                    width: 40,
-                    height: 40,
-                  )
-                : Image.asset(
-                    'assets/f1.jpg',
-                    width: 30,
-                    height: 30,
-                  ),
-            label: 'Introduction',
+                ? Image.asset('assets/f1.jpg', width: 40, height: 40)
+                : Image.asset('assets/f1.jpg', width: 30, height: 30),
+            label: '自我介紹',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.school),
-            label: 'Education',
+            label: '學習歷程',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.scale_outlined),
-            label: 'Plans',
+            label: '學習計畫',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.engineering),
-            label: 'Career',
+            label: '專業方向',
           ),
         ],
         onTap: (index) {
@@ -118,13 +110,11 @@ class Screen1 extends StatelessWidget {
   Screen1({super.key});
 
   final String biography =
-      'I was born in a small city named Binjai, Indonesia, on May 24, 2005. '
-      'I grew up in a modest but loving family. My father worked as a civil servant, '
-      'and my mother was a homemaker. I have a younger sibling still in school. '
-      'Our family values focus on health and education, emphasizing the importance of self-discipline and learning from experiences. '
-      'In school, I actively participated in extracurricular activities, holding roles like class leader and being part of the school\'s basketball and soccer teams. '
-      'Now, I am a Computer Science student at the National Kaohsiung University of Science and Technology. My ultimate dream is to open a well-managed restaurant '
-      'in Indonesia, leveraging my knowledge of technology.';
+      'I was born in Binjai, Indonesia, on May 24, 2005. I am 19 years old. '
+      'My hobbies are basketball, soccer, editing, and videography. '
+      'Currently, I am studying Computer Science at the National Kaohsiung University of Science and Technology. '
+      'I also work part-time at the Marriott Kaohsiung Hotel restaurant to support my tuition fees and help my parents financially. '
+      'In the future, I aspire to open a restaurant in Indonesia with excellent management using technology such as a dedicated website and app.';
 
   @override
   Widget build(BuildContext context) {
@@ -203,7 +193,7 @@ class Screen2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Text('Screen2'),
+      child: Text('學習歷程'),
     );
   }
 }
@@ -212,7 +202,7 @@ class Screen3 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Text('Screen3'),
+      child: Text('學習計畫'),
     );
   }
 }
@@ -221,7 +211,7 @@ class Screen4 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Text('Screen4'),
+      child: Text('專業方向'),
     );
   }
 }
