@@ -1,8 +1,4 @@
-# 🌟 Autobiography Flutter Application 🌟
-
-Welcome to my Flutter application that showcases my autobiography. This app is a personal project designed to share a glimpse into my life, values, and aspirations.
-
-## 📖 About Me
+## 🌟 About Me 🌟
 
 - **Name:** Louis Lai
 - **Age:** 19
