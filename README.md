@@ -22,10 +22,10 @@ I work part-time at the Marriott Kaohsiung hotel restaurant to support my educat
 
 ### 🌍 Languages
 
-- **Main Language:** 🇮🇩 Bahasa
+- **Main Language:** Bahasa Indonesia
 - **Second Language:** 🗣️ Hokkien (Fujian Hua)
 - **Frequently Used:** 🀄 Traditional Chinese (due to studies in Taiwan)
-- **Additional Language:** 🇬🇧 English
+- **Additional Language:** English
 
 ### 🌟 Inspirations
 
